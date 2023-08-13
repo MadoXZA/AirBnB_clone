@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 """Testing User"""
 
+
 import unittest
 import pep8
 from models.user import User
 
 class UserTesting(unittest.TestCase):
     """Check User class"""
+
 
     def test_pep8(self):
         """Test code style"""
@@ -17,4 +19,3 @@ class UserTesting(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
