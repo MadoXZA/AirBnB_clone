@@ -1,14 +1,20 @@
 #!/usr/bin/python3
-""" testing Place """
+"""Testing Place"""
+
 import unittest
 import pep8
 from models.place import Place
-class Place_testing(unittest.TestCase):
- """ check BaseModel """
- def testpep8(self):
- """ testing codestyle """
- pepstylecode = pep8.StyleGuide(quiet=True)
- path_user = 'models/place.py'
- result = pepstylecode.check_files([path_user])
- self.assertEqual(result.total_errors, 0,
- "Found code style errors (and warnings).")
+
+class PlaceTesting(unittest.TestCase):
+    """Check Place class"""
+
+    def test_pep8(self):
+        """Test code style"""
+        pepstylecode = pep8.StyleGuide(quiet=True)
+        path_place = 'models/place.py'
+        result = pepstylecode.check_files([path_place])
+        self.assertEqual(result.total_errors, 0, "Found code style errors (and warnings).")
+
+if __name__ == '__main__':
+    unittest.main()
+
