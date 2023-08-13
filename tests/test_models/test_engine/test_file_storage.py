@@ -18,7 +18,6 @@ from models.amenity import Amenity
 class TestFileStorage(unittest.TestCase):
     """ Check the class """
 
-
     def setUp(self):
         """ Set up test environment """
         self.storage = FileStorage()
