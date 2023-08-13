@@ -3,6 +3,8 @@
 
 import unittest
 import os
+
+
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
 from models.user import User
@@ -15,6 +17,7 @@ from models.amenity import Amenity
 
 class TestFileStorage(unittest.TestCase):
     """ Check the class """
+
 
     def setUp(self):
         """ Set up test environment """
@@ -54,6 +57,7 @@ class TestFileStorage(unittest.TestCase):
         self.storage._FileStorage__objects = {}
         self.storage.reload()
         self.assertIn("BaseModel.{}".format(obj.id), self.storage.all())
+
 
 if __name__ == '__main__':
     unittest.main()
