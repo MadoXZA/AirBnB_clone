@@ -15,7 +15,7 @@ from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 
 
-class test_storage(unittest.TestCase):
+class test_FileStorage(unittest.TestCase):
     """ check the class """
 
     def setUp(self):
