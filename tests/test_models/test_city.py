@@ -5,6 +5,7 @@ import unittest
 import pep8
 from models.city import City
 
+
 class CityTesting(unittest.TestCase):
     """Check City class"""
 
@@ -13,8 +14,11 @@ class CityTesting(unittest.TestCase):
         pepstylecode = pep8.StyleGuide(quiet=True)
         path_city = 'models/city.py'
         result = pepstylecode.check_files([path_city])
-        self.assertEqual(result.total_errors, 0, "Found code style errors (and warnings).")
+        self.assertEqual(
+                result.total_errors, 0,
+                "Found code style errors (and warnings)."
+                )
+
 
 if __name__ == '__main__':
     unittest.main()
-
