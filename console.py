@@ -27,6 +27,9 @@ class HBNBCommand(cmd.Cmd):
         'State': State
     }
 
+    storage = FileStorage()  # Create a single instance of FileStorage
+    storage.reload()  # Load data from the JSON file
+
     def do_quit(self, arg):
         """ Exit method for quitting """
         sys.exit()

@@ -13,6 +13,7 @@ from models.review import Review
 from models.amenity import Amenity
 from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
+from models import storage
 
 
 class test_FileStorage(unittest.TestCase):
