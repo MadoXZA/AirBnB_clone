@@ -46,7 +46,10 @@ class TestConsole(unittest.TestCase):
     def test_quit(self):
         """Quit command"""
         cli = self.create()
-        self.assertTrue(cli.onecmd("quit"))
+        with self.assertRaises(SystemExit):
+            cli.onecmd("quit")
+
+    # You can add more tests below this line to test other commands.
 
 if __name__ == '__main__':
     unittest.main()
