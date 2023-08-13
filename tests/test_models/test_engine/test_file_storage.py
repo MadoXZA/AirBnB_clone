@@ -4,7 +4,7 @@
 
 import unittest
 from os import path
-from models import storage
+from models.engine.file_storage import FileStorage
 from models.user import User
 from models.city import City
 from models.state import State
