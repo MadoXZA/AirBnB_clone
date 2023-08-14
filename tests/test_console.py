@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
+
 """
 Unit tests for console using Mock module from python standard library
 Check console for capturing stdout into a stringIO object
@@ -13,8 +13,7 @@ from console import HBNBCommand
 
 class TestConsole(unittest.TestCase):
     """
-    Unittest for the console model
-=======
+    Unittest for the console model"""
 """Defines the HBnB console."""
 import cmd
 import re
@@ -48,11 +47,9 @@ def parse(arg):
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the  command interpreter.
+    """Defines the  command interpreter."""
     Attributes:
         prompt (str): The command prompt.
->>>>>>> 579dadbaac6b5a619e4a48a52f2b3510efd0ce64
-    """
 
     prompt = "(hbnb) "
     __classes = {
