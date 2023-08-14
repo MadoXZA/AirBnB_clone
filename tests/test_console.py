@@ -1,19 +1,5 @@
 #!/usr/bin/python3
 
-"""
-Unit tests for console using Mock module from python standard library
-Check console for capturing stdout into a stringIO object
-"""
-
-import sys
-import unittest
-from unittest.mock import patch, create_autospec
-from console import HBNBCommand
-
-
-class TestConsole(unittest.TestCase):
-    """
-    Unittest for the console model"""
 """Defines the HBnB console."""
 import cmd
 import re
@@ -47,9 +33,10 @@ def parse(arg):
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the  command interpreter."""
+    """Defines the  command interpreter.
     Attributes:
         prompt (str): The command prompt.
+    """
 
     prompt = "(hbnb) "
     __classes = {
