@@ -3,10 +3,12 @@
 Unit tests for console using Mock module from python standard library
 Check console for capturing stdout into a stringIO object
 """
+
 import sys
 import unittest
 from unittest.mock import patch, create_autospec
 from console import HBNBCommand
+
 
 class TestConsole(unittest.TestCase):
     """
@@ -49,7 +51,6 @@ class TestConsole(unittest.TestCase):
         with self.assertRaises(SystemExit):
             cli.onecmd("quit")
 
-    # You can add more tests below this line to test other commands.
 
 if __name__ == '__main__':
     unittest.main()
